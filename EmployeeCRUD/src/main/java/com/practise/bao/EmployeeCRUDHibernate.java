@@ -100,26 +100,26 @@ public class EmployeeCRUDHibernate {
 		String all_get_res = sc.nextLine();
 
 		if (all_get_res.equalsIgnoreCase("yes")) {
-			employeeServiceImpl.getEmployeeDeatils();
+			lst = new ArrayList<Employee>();
+			lst = employeeServiceImpl.getEmployeeDeatils();
 		} else if (all_get_res.equalsIgnoreCase("no")) {
 			System.out.println("Enter Name for which you want Employee deatils : ");
 			String emp_name = sc.nextLine();
+			lst = new ArrayList<Employee>();
+			lst = employeeServiceImpl.getEmployeesDetails(emp_name);
+		}
+		if (null != lst && lst.size() > 0) {
+			Iterator<Employee> itr = lst.iterator();
 
-			employeeServiceImpl.getEmployeesDetails(emp_name);
+			while (itr.hasNext()) {
+				Employee e = itr.next();
 
-			if (null != lst && lst.size() > 0) {
-				Iterator<Employee> itr = lst.iterator();
-
-				while (itr.hasNext()) {
-					Employee e = itr.next();
-
-					System.out.println("Id is : " + e.getId() + " Name is : " + e.getName() + " Age is : " + e.getAge()
-							+ " Department is : " + e.getDepartment() + " City is : " + e.getCity());
-				}
-			} else {
-				System.out.println("No data found");
-
+				System.out.println("Id is : " + e.getId() + " Name is : " + e.getName() + " Age is : " + e.getAge()
+						+ " Department is : " + e.getDepartment() + " City is : " + e.getCity());
 			}
+		} else {
+			System.out.println("No data found");
+
 		}
 	}
 
@@ -130,7 +130,7 @@ public class EmployeeCRUDHibernate {
 
 		System.out.println("Do you want to update all the Employees : ");
 		String updt_res = sc.nextLine();
-		Boolean updateFlag= true;
+		Boolean updateFlag = true;
 
 		if (updt_res.equalsIgnoreCase("yes")) {
 			while (updateFlag) {
@@ -157,7 +157,7 @@ public class EmployeeCRUDHibernate {
 					System.out.println("unsupported method...");
 					continue;
 				}
-				updateFlag=false;
+				updateFlag = false;
 				employeeServiceImpl.updateEmployee(colmn_res, val_res);
 			}
 
@@ -170,7 +170,6 @@ public class EmployeeCRUDHibernate {
 				System.out.println("Select the column you want to update : (Age / Department / City)");
 				String colmn_res = sc.nextLine();
 				String val_res = null;
-				
 
 				if (colmn_res.equalsIgnoreCase("Age")) {
 

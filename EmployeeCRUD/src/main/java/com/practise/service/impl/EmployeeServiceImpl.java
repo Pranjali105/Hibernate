@@ -22,7 +22,9 @@ public class EmployeeServiceImpl implements EmployeeServiceInterface {
 
 	public List<Employee> getEmployeesDetails(String name) {
 		
-		return daoImpl.getEmployeesDetails(name);
+		List<Employee> lst = daoImpl.getEmployeesDetails(name);
+		System.out.println("Hi");
+		return lst;
 	}
 	
 	public void updateEmployee(String column_name, String value)

@@ -1,7 +1,7 @@
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\service\intrfc\EmployeeServiceInterface.java
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\service\impl\EmployeeServiceImpl.java
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\dao\intrfc\EmployeeDAOInterface.java
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\hibernate\util\HibernateUtil.java
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\dao\impl\EmployeeDAOImpl.java
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\pojo\Employee.java
-D:\Java Study\Practise\17Mar2021_Hibernate\ProgramsFromEclipse\EmployeeCRUD\src\main\java\com\practise\bao\EmployeeCRUDHibernate.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\dao\intrfc\EmployeeDAOInterface.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\bao\EmployeeCRUDHibernate.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\pojo\Employee.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\service\intrfc\EmployeeServiceInterface.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\service\impl\EmployeeServiceImpl.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\hibernate\util\HibernateUtil.java
+D:\Java Study\Workspace\Hibernate\EmployeeCRUD\src\main\java\com\practise\dao\impl\EmployeeDAOImpl.java
