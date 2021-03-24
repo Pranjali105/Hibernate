@@ -1,0 +1,8 @@
+com\practise\pojo\Employee.class
+com\practise\dao\impl\DAOImpl.class
+com\practise\service\impl\ServiceImpl.class
+com\practise\dao\intrfc\DAOInterface.class
+com\practise\main\ManyToManyMappingMain.class
+com\practise\hibernate\util\HibernateUtil.class
+com\practise\pojo\Project.class
+com\practise\service\intrfc\ServiceInterface.class
