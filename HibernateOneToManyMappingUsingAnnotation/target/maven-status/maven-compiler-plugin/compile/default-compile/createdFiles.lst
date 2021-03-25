@@ -1,0 +1,8 @@
+com\practise\pojo\Question.class
+com\practise\dao\impl\DAOImpl.class
+com\practise\service\impl\ServiceImpl.class
+com\practise\dao\intrfc\DAOInterface.class
+com\practise\pojo\Answer.class
+com\practise\hibernate\util\HibernateUtil.class
+com\practise\main\OneToManyMappingMain.class
+com\practise\service\intrfc\ServiceInterface.class
