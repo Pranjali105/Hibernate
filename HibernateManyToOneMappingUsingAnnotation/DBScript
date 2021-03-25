@@ -1,0 +1,31 @@
+create table university(
+university_id number,
+university_name varchar2(50) not null,
+constraint university_id_pk primary key(university_id)
+);
+
+create table student(
+student_id number,
+name varchar2(20) not null,
+stream varchar2(20) not null,
+university_id number,
+constraint student_id_pk primary key(student_id),
+constraint university_id_fk foreign key(university_id)
+references university(university_id)
+);
+
+desc university;
+
+desc student;
+
+alter table student
+rename column stream to student_stream;
+
+select * from student;
+
+select * from university;
+
+
+select s.student_id, s.student_name, u.university_name
+from student s, university u
+where s.university_id = u.university_id;
